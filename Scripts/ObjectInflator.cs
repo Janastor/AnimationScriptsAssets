@@ -20,7 +20,7 @@ public class ObjectInflator : MonoBehaviour
     
     void Update()
     {
-        _transform.localScale = _transform.localScale + Vector3.one * _speed * Time.deltaTime;
+        _transform.localScale += Vector3.one * _speed * Time.deltaTime;
         
         if (Input.GetKeyDown(_resetKey))
             _transform.localScale = _defaultScale;
